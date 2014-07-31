@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- you can run the test url to display the available 
+resources for DWR http://localhost:8080/DWR_Sample/dwr/index.html -->
+
+
+<dwr>
+	<allow>
+		<create creator="spring" javascript="echoService">
+			<param name="beanName" value="echoService"/>
+		</create> 
+		
+		<create creator="new" javascript="Communicator">
+			<param name="class" value="com.zoneacademy.Communicator"/>
+		</create>
+	</allow>
+</dwr>
