@@ -3,9 +3,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<script type="text/javascript" src="/DWR_Sample/dwr/engine.js"></script>
-	<script type="text/javascript" src="/DWR_Sample/dwr/util.js"></script>
-	<script type="text/javascript" src="/DWR_Sample/dwr/interface/echoService.js"></script>
+	<script type="text/javascript" src="dwr/engine.js"></script>
+	<script type="text/javascript" src="dwr/util.js"></script>
+	<script type="text/javascript" src="dwr/interface/echoService.js"></script>
 	
 	<script type="text/javascript">
 		function echo(){

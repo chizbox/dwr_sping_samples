@@ -3,7 +3,7 @@
   <display-name>DWR_Sample</display-name>
   
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>cardlist.jsp</welcome-file>
   </welcome-file-list>
 
   <!-- this is the dwr servlet declaration-->
@@ -36,5 +36,4 @@
   	</context-param>
   
    -->
-  
 </web-app>

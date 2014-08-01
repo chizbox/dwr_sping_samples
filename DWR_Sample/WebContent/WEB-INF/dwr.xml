@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- you can run the test url to display the available 
-resources for DWR http://localhost:8080/DWR_Sample/dwr/index.html -->
+<!-- you can run the test url to display the available resources for DWR 
+	http://localhost:8080/DWR_Sample/dwr/index.html -->
 
 
 <dwr>
 	<allow>
 		<create creator="spring" javascript="echoService">
-			<param name="beanName" value="echoService"/>
-		</create> 
-		
-		<create creator="new" javascript="Communicator">
-			<param name="class" value="com.zoneacademy.Communicator"/>
+			<param name="beanName" value="echoService" />
 		</create>
+
+		<create creator="new" javascript="Communicator">
+			<param name="class" value="com.zoneacademy.Communicator" />
+		</create>
+
+		<create creator="new" javascript="People" scope="script">
+			<param name="class" value="com.dwr.sample.People" />
+		</create>
+
+		<convert match="com.dwr.sample.Person" converter="bean" />
+
+		<!-- for cardList.jsp -->
+		<create creator="spring" javascript="cardService">
+			<param name="beanName" value="cardService" />
+		</create>
+
+		<convert match="com.hearthstone.hssample.Card" converter="bean" />
+		<!-- for cardList.jsp -->
+
 	</allow>
 </dwr>

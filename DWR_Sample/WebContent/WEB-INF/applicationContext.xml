@@ -5,6 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
    
-   
    	  <bean id="echoService" class="hello.echo.service.EchoService"/>
+	  <bean id="cardService" class="com.hearthstone.hssample.CardService"/>
+
 </beans>           
